@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="{% static 'home\favicon.png' %}">
     <meta charset="UTF-8">
     <title>Blagdeni</title>
 </head>
@@ -13,9 +15,12 @@
 <h1>Blagdeni</h1> 
 </div>
 
-<div class="contanir">
-        <input id="Rrrr" class="form-control" placeholder="Найти">
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon1">Найти</button>
     </div>
+    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+  </div>
 
 
 
